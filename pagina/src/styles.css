@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    line-height: 1.5;
+
+}
+
+header {
+    width: 100%;
+}
+
+input[value="Inciar Sesión"] {
+    border: none;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 200px;
+    padding: 10px;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+}
+
+.navegador {
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    height: 200px;
+    padding-top: 20px;
+
+}
+
+.navegador ul{
+    display: flex;
+    list-style: none;
+    top: 200px;
+}
+
+.navegador ul li {
+    position: relative;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: black;
+}
+.navegador ul li a:hover {
+    background-color: #8fb9d1;
+}
+  
+.navegador ul ul {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+
+.navegador ul ul li:hover > ul {
+    display: block;
+    top: 0;
+    left: 110px;
+}
+
+.navegador ul li:hover > ul {
+    display: block;
+    top: 50;
+}
